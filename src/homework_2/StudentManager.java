@@ -38,14 +38,15 @@ public class StudentManager {
 	
 	
 	public boolean searchStudentByID(int id) {
-		if(students != null) {
-			for(int i = 0;i < students.length;i++) { //iterates through student array
-				if(students[i].getId() == id) { //checks to see if current element is equal to passed in id
+		int i = 0;	
+		while(students[i]!=null) { //iiterates through students array
+				if(students[i].getId() == id && students[i]!= null) { //checks to see if current element is equal to passed in id
 					System.out.println(students[i].toString()); // if yes display details
 					return true;
 				}
+				i++;
 			}
-		}
+		
 		return false; //if no return false
 
 	}

@@ -10,12 +10,12 @@ public class Homework_2 {
 		System.out.println(fileReadStatus);
 		//studentManager.printStudentArray();
 		
-		Student student1 = new Student(1, "Skylar", 4);
+		Student student1 = new Student(3, "Skylar", 4);
 		
 		StudentManager teacher = new StudentManager();
 		
 		teacher.addStudent(student1);
-		teacher.searchStudentByID(1);
+		teacher.searchStudentByID(3);
 		
 	
 	}
