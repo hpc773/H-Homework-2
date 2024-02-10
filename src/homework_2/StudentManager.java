@@ -50,6 +50,23 @@ public class StudentManager {
 		return false; //if no return false
 
 	}
+	
+	public boolean updateStudentGradeById(int id, double grade) {
+		if(searchStudentByID(id) == false) { //checks if student id exists
+			return false;
+		}
+		else {
+			int i = 0;
+			while(students[i] != null) { //increments thru student array
+				if(students[i].getId() == id) //finds student place in array by id
+				{
+					students[i].setGrade(grade); //sets grade
+				}
+				i++; //increments while loop
+			}
+			return true; 
+		}
+	}
 	//fileReader
 		public boolean readFromFile(String fileName) {
 		try {
