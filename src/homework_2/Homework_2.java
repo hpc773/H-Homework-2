@@ -16,6 +16,8 @@ public class Homework_2 {
 		
 		teacher.addStudent(student1);
 		teacher.searchStudentByID(3);
+		teacher.updateStudentGradeById(3, 3);
+		teacher.searchStudentByID(3);
 		
 	
 	}

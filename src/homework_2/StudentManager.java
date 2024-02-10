@@ -46,7 +46,7 @@ public class StudentManager {
 				}
 				i++;
 			}
-		
+		System.out.println("Student not found.");
 		return false; //if no return false
 
 	}
